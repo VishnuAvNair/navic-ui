@@ -1,0 +1,108 @@
+/* Banner Section */
+.home-banner {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .home-banner {
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=1600') no-repeat center center/cover;
+  }
+  
+  
+  .banner-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+  
+  /* Common Section Styling */
+  .about-section, 
+  .services-section, 
+  .contact-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #007bff;
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+  
+  /* Services Section */
+  .services-section {
+    background: white;
+  }
+  
+  .service-box {
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    background: #007bff;
+    color: white;
+  }
+  
+  .contact-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
